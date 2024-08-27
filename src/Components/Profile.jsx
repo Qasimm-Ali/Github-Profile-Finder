@@ -35,7 +35,7 @@ export default function Profile() {
           </button>
         </div>
         {/* <div className="flex justify- "> */}
-        <div className="h-[50%] bg-indigo-500 w-[330px] flex flex-wrap gap-6  ">
+        <div className="h-[50%] bg-indigo-600 w-[330px] flex flex-wrap gap-6  ">
           <div className="header">
             {userData && (
               <>
