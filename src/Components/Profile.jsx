@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { FaGithub } from "react-icons/fa";
 export default function Profile() {
   // const [user, setuser] = useState()
   const [userName, setuserName] = useState("Qasimm-Ali");
@@ -58,6 +59,10 @@ export default function Profile() {
                 <div className="flex flex-col mt-3 px-6">
                   <p className="text-gray-800 font-medium" >Followers :- <span className="text-white text-[17px] font-sans"> {userData.followers}</span> </p>
                   <p className="text-gray-800 font-medium" >Following :-  <span className="text-white text-[17px] font-sans">{userData.following} </span> </p>
+                  <p className="text-gray-800 font-medium" >Repos :-  <span className="text-white text-[17px] font-sans">{userData.public_repos} </span> </p>
+                </div>
+                <div>
+                  <p className="w-full flex justify-end pr-10"><a href={userData.html_url}><FaGithub size={31}/> </a></p>
                 </div>
               </>
             )}
